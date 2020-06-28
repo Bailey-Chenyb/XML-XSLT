@@ -19,7 +19,7 @@ I considered this project to be a pilot for a much larger project and so it was 
 
 *Notes:**
 
-- This is an assessed student project.  This project is about the use of XML to encode documents and to process an output using XSLT. CSS is not taken into consideration.
+- This is an assessed student project.  This project is about the use of XML to encode documents and to process an output using XSLT. CSS and validation issues with the HTML are not taken into consideration here.
 
 - I release this code hoping that others will use and improve on my work.
 
@@ -66,6 +66,17 @@ As supplement documents on a commercial website, these instructions should evoke
 1. The information on the header and footer is excluded from both formats because they are is less relevant and can be easily found if customers enter the main page of ufseeds.com.
 
 2. The last section of advertisement in the original materials is also excluded. Instead, the descriptions along pictures in each material are displayed as purchase links, as the picture descriptions are more concise, and they also contain links to the website.
+
+
+
+## Review:
+1. Adding the link to the XSL file in XML file is only needed for testing the transformation in a browser before committing to the process. It would be simpler to include them both and then comment out the one that is not immediately needed. Oxygen associates them for generating the output files. Having duplicate files increases the possibility for error.
+
+2. There are a few typos issues.
+
+3. It would be better if I build an index page to pull these two pages together into the simple website. An alternative would be to have 'instructional' as a landing page that links out to 'characteristic'.
+
+4. I should have also included DOCTYPE so that it outputs in the HTML. 
 
 
 **Contact:** Please email any questions or suggestions to: chen.bailey@outlook.com

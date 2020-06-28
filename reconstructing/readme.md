@@ -23,6 +23,8 @@ I considered this project to be a pilot for a much larger project and so it was 
 
 - I release this code hoping that others will use and improve on my work.
 
+**Contact:** Please email any questions or suggestions to: chen.bailey@outlook.com
+
 
 #### Rationale for the choice of materials:
 1. Text-intensive tutorials:
@@ -78,8 +80,6 @@ As supplement documents on a commercial website, these instructions should evoke
 
 4. I should have also included DOCTYPE so that it outputs in the HTML. 
 
-
-**Contact:** Please email any questions or suggestions to: chen.bailey@outlook.com
 
 ## References:
 1. Bański, P., & Witt, A. (2018). Modeling and annotating complex data structure.

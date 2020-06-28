@@ -49,7 +49,7 @@ As supplement documents on a commercial website, these instructions should evoke
 - In the academic format:
 1. thematic tables: thematic tables are used to compare natural characteristics of ten flowering plants. Readers could conveniently compare the similarities and differences between plants and find out the relationships of plants. In order to develop themes accurately and ensure the components in each thematic table are sensible in the field of botany, the tables are developed with reference to an online plant database by The Royal Horticultural Society: www.rhs.org.uk/plants/search-form.
 
-2. Display <p>-<p> when an element cannot be found: This visual presentation could give higher extensibility. Because if a more comprehensive flower database is to be developed using this format as a basis, a simple “-” could help editors to efficiently detect which plant characteristics are missing whilst keep the overall display clear.
+2. Display "-" when an element cannot be found: This visual presentation could give higher extensibility. Because if a more comprehensive flower database is to be developed using this format as a basis, a simple “-” could help editors to efficiently detect which plant characteristics are missing whilst keep the overall display clear.
 
 3. XSLT style: Because the elements related to characteristics could be mentioned in different sections under the element of instruction in original materials, their XPath expressions should all be started with: instructions/instruction. If apply XSL templates, incorrect match might occur (Tennison, 2002). However, in order to demonstrate the study results and the diversity usage of XSLT, one XSL template is applied to element of colors in characteristic-oriented stylesheet.
 

@@ -1,0 +1,1731 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instructions SYSTEM "../dtd/plantInstruction.dtd">
+<?xml-stylesheet type="text/xsl" href="instructional displaying style.xsl"?>
+          
+<instructions>
+    <!-- adding metadata here -->
+    <meta>
+        <source>https://www.ufseeds.com/</source>
+        <reference>Urban Farmer. (n.d.). From Seed to Harvest: A beginner’s guide to growing Aster. https://files.ufseeds.com/uploads/Instructions-for-Growing-Aster.pdf/></reference>
+        <reference>Urban Farmer. (n.d.). From Seed to Harvest: A beginner’s guide to growing Cosmos. https://files.ufseeds.com/uploads/Instructions-for-Growing-Cosmos.pdf</reference>
+        <reference>Urban Farmer. (n.d.). From Seed to Harvest: A beginner’s guide to growing Daisies. https://files.ufseeds.com/uploads/Instructions-for-Growing-Daisies.pdf"/></reference>
+        <reference>Urban Farmer. (n.d.). From Seed to Harvest: A beginner’s guide to growing Echinacea. https://files.ufseeds.com/uploads/Instructions-for-Growing-Echinacea.pdf</reference>
+        <reference>Urban Farmer. (n.d.). From Seed to Harvest: A beginner’s guide to growing Marigolds. https://files.ufseeds.com/uploads/Instructions-for-Growing-Marigolds.pdf</reference>
+        <reference>Urban Farmer. (n.d.). From Seed to Harvest: A beginner’s guide to growing Phlox. https://files.ufseeds.com/uploads/Instructions-for-Growing-Phlox.pdf</reference>
+        <reference>Urban Farmer. (n.d.). From Seed to Harvest: A beginner’s guide to growing Poppies. https://files.ufseeds.com/uploads/Instructions-for-Growing-Poppies.pdf</reference>
+        <reference>Urban Farmer. (n.d.). From Seed to Harvest: A beginner’s guide to growing Rudbeckia. https://files.ufseeds.com/uploads/Instructions-for-Growing-Rudbeckia.pdf</reference>
+        <reference>Urban Farmer. (n.d.). From Seed to Harvest: A beginner’s guide to growing Salvia. https://files.ufseeds.com/uploads/Instructions-for-Growing-Salvia.pdf</reference>
+        <reference>Urban Farmer. (n.d.). From Seed to Harvest: A beginner’s guide to growing Zinnias. https://files.ufseeds.com/uploads/Instructions-for-Growing-Zinnias.pdf</reference>
+        <author>Yibei Chen</author>
+        <accessingDate>Thursday 05 March 2020</accessingDate>
+    </meta>
+
+
+    <!-- The first instruction starts from here  -->
+    <instruction type="Aster">
+        
+        <!-- the information in page header is less relevant to the scenarios I intend to create
+            therefore, detailed mark-ups are not provided. -->
+        <pageHeader>
+            URBAN FARMER LOVE THE EARTH
+            120 E 161st Street, Westfield, Indiana 46074
+            Phone: 317-600-2807 • Email: customerservice@ufseeds.com
+            website: ufseeds.com
+        </pageHeader>
+        
+        
+        
+        <!-- Section 1: Title -->
+        <!-- The title are divided into two parts: the first level tells the scope, 
+            from Seed to Harvest and the difficulty level of the tutorial. The second part declares 
+            the name of the flower type of the instruction: Aster and pictures -->
+        <articleTitle>
+            <instructionDescription>From Seed to Harvest:
+                A beginner’s guide to growing </instructionDescription>
+            <flowerName>Aster</flowerName>
+            <photo filename="../img/Aster.jpg"/>
+            <photoDescription>Alpinus Mix Aster seeds available at </photoDescription><website url='ufseeds.com'>ufseeds.com</website>
+            <photo filename="../img/Aster2.jpg"/>
+            <photoDescription>Powder Puff Mix Aster seeds available at </photoDescription><website url='ufseeds.com'>ufseeds.com</website>
+        </articleTitle>
+        
+        <!-- Section 2: Introduction -->
+        <!-- The introduction covers most of the characteristics of the flower -->    
+        <!--these characteristics are labeled so that it can be extracted and then rearranged 
+            with characteristics of flowers in other ten chosen materials   -->
+        <introduction>
+            Aster is a flower that looks similar to daisies because of its <appearance><colors part="center">bright yellow, round center</colors></appearance> that is surrounded by <appearance><colors part="petal">colorful petals</colors></appearance>. Aster is a <lifeCycle>perennial</lifeCycle>, which means it comes back year after year. It grows in many different colors with 
+            <appearance><colors part="bloom"> white, blue, pink and purple being the most common</colors></appearance>. 
+            Aster flowers can reach up to <appearance><maxHeight>8 feet</maxHeight></appearance>
+            tall depending on the variety, and the flowers will attract <insect type="attraction">butterflies</insect> to the garden
+        </introduction>
+        
+        
+        <!-- In several instructions, a few planting steps are required only in special circumstances.
+               Using attributes to clarify the conditions allow stylesheet to fetch and display applicable  conditions 
+               efficiently, so that beginner gardeners could  know the applicability of each step. -->
+        <!-- Section 3: Planting -->
+        <planting>
+            <title>To plant:</title>
+            <plantingSteps nmbr="1" condition="general">
+                Begin Aster seeds <location type="planting">indoors</location> six weeks before the last frost.
+            </plantingSteps>
+            
+            <plantingSteps nmbr="2" condition="general">
+                Plant two seeds 1/8 deep in <materials type="tools">a smallpot</materials> with <materials  type="tools">a sterile potting mix</materials>.
+            </plantingSteps>
+            
+            <plantingSteps nmbr="3" condition="general">
+                Make sure the soil is <soil type="planting">thoroughly watered</soil>bafter planting the seeds.
+            </plantingSteps>
+            
+            <plantingSteps nmbr="4" condition="general">
+                Cover the pots with <materials type="tools">a plastic bag</materials> to keep the environment  <temperature type="planting">warm</temperature>and <moisture>moist</moisture>, which will encourage germination.
+            </plantingSteps>
+            
+            <plantingSteps nmbr="5" condition="general">
+                Seeds should sprout within 10 days. Remove the plastic once the seeds sprout.
+            </plantingSteps>    
+        </planting>
+        
+        <!-- Different from the planting steps, instruction of growing stage is relatively more
+            condition-oriented. Using attributes to clarify the conditions allow stylesheet to fetch 
+            and display applicable  conditions efficiently, so that beginner gardeners could  know
+            the applicability of each step. -->
+        <!-- Section 4: Growth -->
+        <growth>
+            <title>To grow:</title>
+            <!-- the following growth instruction applies to the general condition of growing Aster  -->
+            <growthMethods nmbr="1" condition="general">
+                <growthSteps nmbr="1">
+                    Once seedlings have their second set of leaves, thin them so only the strongest one remains in each <materials type="tools">pot</materials>. 
+                </growthSteps>
+                <growthSteps nmbr="2">
+                    Once seedlings are 6 inches tall, transplant them <location type="growing">outdoors</location>. 
+                </growthSteps>
+                <growthSteps nmbr="3">
+                    Space them <space type="growing">18 inches apart</space>. Aster grows best in <exposure>full sun</exposure> or <exposure>partial shade</exposure>. 
+                </growthSteps>
+            </growthMethods>
+            
+            <!-- the following growth instruction applies to the condition of growing Aster in containers  -->
+            <growthMethods nmbr="2" condition="containers-grown">
+                <growthSteps nmbr="1">
+                    In addition to growing well in <bed type="flower-bed">a flower bed</bed>, Aster also grows well in <bed type="container">containers</bed> as a potted plant. Instead of transplanting seedlings to a flower bed,
+                    they can also be transplanted to <materials type="tools">a 12-inch diameter pot</materials> <location type="growing">outside</location>.
+                </growthSteps>
+                <growthSteps nmbr="2">
+                    After transplanting, add <materials type="other">mulch</materials> around the plants to keep the soil <soil type="growing">cool and retain moisture</soil>.
+                </growthSteps>
+            </growthMethods>
+            
+            <!-- the following growth instruction applies to the all conditions  -->
+            <growthMethods nmbr="3" condition="general">
+                <growthSteps nmbr="1">
+                    Aster flowers require <watering>1 inch of water per week</watering>. 
+                </growthSteps>
+            </growthMethods>
+            
+            <!-- the following growth instruction applies to the condition in which Aster plants have deadheading  -->
+            <growthMethods nmbr="4" condition="deadheading">
+                <growthSteps nmbr="1">
+                    They grow better when trimmed lightly and when their dead flowers are deadheaded. Deadheading is done by pinching off the dead blooms.
+                </growthSteps>
+            </growthMethods>
+            
+            <!-- the following growth instruction applies to the condition in growing a taller type of Aster  -->
+            <growthMethods nmbr="5" condition="taller variaty">
+                <growthSteps nmbr="1">
+                    Also, with taller varieties of the plant, cut back any stems that begin to grow leggy. 
+                </growthSteps>
+                <growthSteps nmbr="2">
+                    Every three years, divide the Aster plants to maintain the flower quality and growth.
+                </growthSteps>
+            </growthMethods>
+        </growth>
+        
+        
+        <!-- Section 5: Harvest -->
+        <!-- the following section tells audience how to harvest Aster -->
+        <harvest>
+            <title>To harvest:</title>
+            <!-- this part tells audience about the possible outcome, when and what can be used to harvest Aster -->
+            <possibleOutcome>
+                Aster flowers will bloom into the late summer and early fall .  Aster flowers are very popular to cut and put in vases because of their <outcome>long-lasting blooms</outcome>. Aster also has a <outcome>sturdy stalk </outcome>that makes it good for vases.
+            </possibleOutcome>
+            
+            
+            <!-- this part demonstrates 2 harvest steps -->
+            <harvestSteps nmbr="1">
+                To harvest, cut the stem low to the ground and check for insects that may be hiding in the stem, flowers or leaves. 
+            </harvestSteps>
+            <harvestSteps nmbr="2">
+                Bring the cuttings indoors and place in water immediately.
+            </harvestSteps>
+        </harvest>
+        
+        
+        <!-- Section 6: Craving -->
+        <!-- this section shows what kind of fertilizer Aster wants  -->
+        <craving>
+            <title>What Aster craves:</title>
+            <cravingItem condition="pre-planting" >
+                Prior to planting, amend the soil with <itemName type="compost">compost  or a natural fertilizer </itemName>.
+            </cravingItem>
+            
+            <cravingItem condition="spring">
+                Each spring, add a 2-inch layer of <itemName type="compost">compost</itemName> around the Aster flowers.
+            </cravingItem>
+            
+            <cravingItem  condition="monthly">
+                Add a <itemName type="fertilizer">general fertilizer</itemName> once a month to the Aster plants to encourage the best growth.
+            </cravingItem>
+        </craving>
+        
+        
+        <!-- Section 7: Advertisement -->
+        <advertisement>
+            <title>Where to buy Aster seeds:</title>
+            Urban Farmer sells different varieites of Aster flower seeds that 
+            produce brightly colored blooms.  Check out our Aster seed selection on our website at 
+            <link url='ufseeds.com'>ufseeds.com!</link>
+        </advertisement> 
+        
+        <!-- the information in page footer is less relevant to the scenarios I intend to create
+            therefore, detailed tags are not provided. -->
+        <pageFooter>
+            100% Non-GMO Seed
+            One Day shipping
+            100% Satisfaction Guarantee
+            Family Owned + Operated
+            Copyright 2018 © Urban Farmer. All rights reserved.
+        </pageFooter>
+    </instruction>
+    
+    
+    <instruction type="Cosmos">
+        
+        <!-- the information in page header is less relevant to the scenarios I intend to create
+            therefore, detailed mark-ups are not provided. -->
+        <pageHeader>
+            URBAN FARMER LOVE THE EARTH
+            120 E 161st Street, Westfield, Indiana 46074
+            Phone: 317-600-2807 • Email: customerservice@ufseeds.com
+            website: ufseeds.com
+        </pageHeader>
+        
+        
+        <!-- Section 1: Title -->
+        <!-- The title are divided into two parts:the first level tells the scope, 
+            from Seed to Harvest and the difficulty level of the tutorial. The second part declares 
+            the name of the flower type of the instruction: Cosmos and pictures -->
+        <articleTitle>
+            <instructionDescription>From Seed to Harvest:
+                A beginner’s guide to growing </instructionDescription>
+            <flowerName>Cosmos</flowerName>
+            <photo filename="../img/Cosmos.jpg"/>
+            <photoDescription>Picotee Cosmo seeds available at </photoDescription><website url='ufseeds.com'>ufseeds.com</website>
+            <photo filename="../img/Cosmos2.jpg"/>
+            <photoDescription> Sea Shells Mix Cosmo seeds available at </photoDescription><website url='ufseeds.com'>ufseeds.com</website>
+            
+            
+        </articleTitle>
+        
+        
+        <!-- Section 2: Introduction -->
+        <!-- The introduction covers most of the characteristics of the flower -->    
+        <!--these characteristics are labeled so that it can be extracted and then rearranged 
+            with characteristics of flowers in other ten chosen materials   -->
+        <introduction>
+            Cosmos are often seen in wildflower mixes, and they have <appearance><colors part="bloom" >bright colors</colors></appearance> that make good borders or as cut flowers. Cosmos have many different varieties which reach different heights and <appearance><colors part="bloom">have an assortment of colors</colors></appearance>.
+            Cosmos can appear in single or double blooms and are easy to care for. The flowers can reach up to <appearance><maxHeight>4</maxHeight></appearance> feet high but other varieties only reach 1 foot high. 
+            Cosmos are a member of the <family>aster</family> family and have daisy-likeflowers. The flowers will attract <insect type="attraction">butterflies</insect> to the garden.
+        </introduction>
+        
+        
+        <!-- In several instructions, a few planting steps are required only in special circumstances.
+            Using attributes to clarify the conditions allow stylesheet to fetch and display applicable  conditions 
+            efficiently, so that beginner gardeners could  know the applicability of each step. -->
+        <!-- Section 3: Planting -->
+        <planting>
+            <title>To plant:</title>
+            <plantingSteps nmbr="1" condition="general">
+                Cosmos grow best in <soil type="planting">soil that has not been amended</soil>, so do not amend the soil prior to planting.
+            </plantingSteps>
+            
+            <plantingSteps nmbr="2"  condition="general">
+                The flowers are usually grown from seed, and they are typically directly sown into the <location type="planting">outdoor garden</location>.
+            </plantingSteps>
+            
+            <plantingSteps nmbr="3"  condition="general">
+                Scatter the seeds around the planting area and cover lightly with soil, no more than 1⁄4 inch.
+            </plantingSteps>
+            
+            <plantingSteps nmbr="4"  condition="mix varieties">
+                When deciding where to plant Cosmos, be sure to plant taller varieties in the back of the garden bed so they don’t shade other Cosmos or flowers growing there. 
+                Dwarf varieties should be planted as a border along garden beds. It will take up to seven weeks for Cosmos to bloom if planted from seed. 
+            </plantingSteps>
+            
+            <plantingSteps nmbr="5" condition="early start">
+                To start early, plant the seeds indoors six weeks before the last frost with a seed-starting mix.
+            </plantingSteps>
+        </planting>
+        
+        
+        
+        <!-- Different from the planting steps, instruction of growing stage is relatively more
+            condition-oriented. Using attributes to clarify the conditions allow stylesheet to fetch 
+            and display applicable  conditions efficiently, so that beginner gardeners could  know
+            the applicability of each step. -->
+        <!-- Section 4: Growth -->
+        <growth>
+            <title>To grow:</title>
+            <growthMethods nmbr="1" condition="indoor">
+                <growthSteps nmbr="1">
+                    If beginning indoors, transplant Cosmos outside once they are approximately 4 inches tall. 
+                </growthSteps>
+            </growthMethods>
+            
+            <growthMethods nmbr="2" condition="general">
+                <growthSteps nmbr="1">
+                    Cosmos’ best growing conditions are <temperature type="growing">hot</temperature> and <moisture>dry</moisture>. 
+                </growthSteps>
+                <growthSteps nmbr="2">
+                    To care for the Cosmos, be sure to deadhead spent blooms. This encourages more blooms to occur lower on the plant, which will make a stronger plant.
+                </growthSteps>
+            </growthMethods>
+            
+            
+            <!--  the following growth instruction applies to the condition of growing the taller type of Cosmos
+                two sentences are labelled together because they are not sequential steps, but alternative methods for 
+                growing a  taller variety -->
+            <growthMethods nmbr="3" condition="taller variaty">
+                <growthSteps nmbr="1">
+                    Also, if you are growing a taller variety of Cosmos, you may need to <materials type="tools">stake</materials> the plant so it isn’t damaged by wind or grow the flowers against a <materials type="tools">fence</materials>. 
+                    Another option is to plant the flowers closer than 2 feet to one another, where they will protect each other from the wind instead of staking. 
+                </growthSteps>
+            </growthMethods>
+            
+            <growthMethods nmbr="5" condition="general">
+                <growthSteps nmbr="1">
+                    Cosmos grow nicer, larger flowers if they are <watering>watered regularly</watering>. Although Cosmos come in both <lifeCycle>annual</lifeCycle> and <lifeCycle>perennial</lifeCycle> varieties, the plant reseeds itself. 
+                </growthSteps>
+            </growthMethods>
+            
+            <growthMethods nmbr="5" condition="mix">
+                <growthSteps nmbr="1">
+                    Cosmos do well when paired with cleome, dahlias and cannas.
+                </growthSteps>
+            </growthMethods>
+        </growth>
+        
+        
+        
+        <!-- Section 5: Harvest -->
+        <harvest>
+            <title>To harvest:</title>
+            <possibleOutcome>
+                Instead of deadheading, Cosmos can be cut to be displayed indoors and this has the same affect as deadheading would in encouraging more growth on the plant.
+                Cosmos are good for <outcome>cut flowers</outcome> because of their <outcome>long-lasting blooms</outcome> and <outcome>lengthy stems</outcome>. 
+            </possibleOutcome>
+            
+            <harvestSteps nmbr="1">
+                If hoping to harvest seeds or that the Cosmos will self-sow, leave a few flowers on the plant so they can turn into seed pods and reseed themselves.
+            </harvestSteps>
+        </harvest>
+        
+        
+        
+        <!-- Section 6: Craving -->
+        <craving>
+            <title>What Cosmos craves:</title>
+            Since Cosmos thrive on
+            <cravingItem>
+                <itemName type="other">poor soil</itemName>, 
+            </cravingItem>
+            
+            <restriction>
+                do not add fertilizer to the plants
+            </restriction>
+            <restriction>
+                If Cosmos are planted in an area with amended soil, the flowers grown there will be weak and will not stand upright.
+            </restriction>
+        </craving>
+        
+        
+        <!-- Section 7: Advertisement -->
+        <!-- this is the section of  advertisement -->
+        <advertisement>
+            <title>Where to buy Cosmo seeds:</title>
+            Urban Farmer offers many different kinds of Cosmos in different colors in tall and dwarf mixes.
+            Check out our Cosmo seed selection on our website at 
+            <link url='ufseeds.com'>ufseeds.com!</link>
+        </advertisement>
+        
+        
+        <!-- the information in page footer is less relevant to the scenarios I intend to create
+            therefore, detailed tags are not provided. -->
+        <pageFooter>
+            100% Non-GMO Seed
+            One Day shipping
+            100% Satisfaction Guarantee
+            Family Owned + Operated
+            Copyright 2018 © Urban Farmer. All rights reserved.
+        </pageFooter>
+    </instruction>
+    
+    <instruction type="Echinacae">
+        
+        <!-- the information in page header is less relevant to the scenarios I intend to create
+            therefore, detailed mark-ups are not provided. -->
+        <pageHeader>
+            URBAN FARMER LOVE THE EARTH
+            120 E 161st Street, Westfield, Indiana 46074
+            Phone: 317-600-2807 • Email: customerservice@ufseeds.com
+            website: ufseeds.com
+        </pageHeader>
+        
+        
+        <!-- Section 1: Title -->
+        <!-- The title are divided into two parts:the  first level tells the scope, 
+            from Seed to Harvest and the difficulty level of the tutorial. The second part declares 
+            the name of the flower type of the instruction: Echinacae and pictures -->
+        <articleTitle>
+            <instructionDescription>From Seed to Harvest:
+                A beginner’s guide to growing </instructionDescription>
+            <flowerName>Echinacae</flowerName>
+            <photo filename="../img/Echinacae.jpg"/>
+            <photoDescription>Purple Echinacea seeds available at </photoDescription><website url='ufseeds.com'>ufseeds.com</website>
+            <photo filename="../img/Echinacae2.jpg"/>
+            <photoDescription>White Swan Echinacea seeds available at </photoDescription><website url='ufseeds.com'>ufseeds.com</website>
+        </articleTitle>
+        
+        
+        <!-- Section 2: Introduction -->
+        <!-- The introduction covers most of the characteristics of the flower -->    
+        <!--these characteristics are labeled so that it can be extracted and then rearranged 
+            with characteristics of flowers in other ten chosen materials   -->
+        <introduction>
+            Echinacae, more commonly known as coneflower, are care-free heavy bloomers that bloom from summer to fall. 
+            It is an easy flower to grow from seed, and it is known to be <moisture>drought resistant</moisture> and <persistence>long lasting</persistence>.
+            They are <appearance><colors part="bloom"> commonly purple, but also can grow in white and yellow</colors></appearance>
+            . Coneflower is a native to the eastern part of the United States.
+        </introduction>
+        
+        <!-- In several instructions, a few planting steps are required only in special circumstances.
+            Using attributes to clarify the conditions allow stylesheet to fetch and display applicable  conditions 
+            efficiently, so that beginner gardeners could  know the applicability of each step. -->
+        <!-- Section 3: Planting -->
+        <planting>
+            <title>To plant:</title>
+            <plantingSteps nmbr="1" condition="general">
+                Although coneflower plants are easy to care for, the seeds are tough to germinate. 
+                To plant coneflower from seed, take the seeds and sprinkle them on  
+                <materials type="tools">a damp paper towel</materials>
+                that has been folded in half. 
+            </plantingSteps>
+            
+            <plantingSteps nmbr="2" condition="general">
+                Fold the paper towel in half again to cover the seeds between the two damp halves. 
+            </plantingSteps>
+            
+            <plantingSteps nmbr="3" condition="general"> 
+                Then, place the paper towel in <materials type="tools">a plastic bag</materials>, seal it and keep it in <materials type="tools">a refrigerator</materials> for eight to 12 weeks. 
+                This treatment copies winter conditions, which will allow the seeds to break dormancy to then germinate.
+            </plantingSteps>
+            
+            
+            <plantingSteps nmbr="4" condition="general">
+                After the cold treatment, sow two coneflower seeds in <materials type="tools">8-inch pots</materials> and cover with <materials type="other">a small sprinkling of soil</materials>. 
+            </plantingSteps>
+            
+            <plantingSteps nmbr="5" condition="general">
+                Cover the pots with <materials type="tools">a clear plastic bag</materials> but remove this once seedlings sprout so they can receive the full amount of light.
+            </plantingSteps>
+        </planting>
+        
+        
+        <!-- Different from the planting steps, instruction of growing stage is relatively more
+            condition-oriented. Using attributes to clarify the conditions allow stylesheet to fetch 
+            and display applicable  conditions efficiently, so that beginner gardeners could  know
+            the applicability of each step. -->
+        <!-- Section 4: Growth -->
+        <growth>
+            <title>To grow:</title>
+            
+            <!-- the following method is applicable  to general situation  -->
+            <growthMethods nmbr="1" condition="general">
+                <growthSteps nmbr="1">
+                    Once coneflowers produce their second set of true leaves, transplant them outside into an area that receives <exposure>full sun</exposure>. Wait until after the last frost to do this. 
+                </growthSteps>
+            </growthMethods>
+            
+            <!-- the following method is applicable  to a situation with normal rainfall  -->
+            <growthMethods nmbr="2" condition="normal rainfall">
+                <growthSteps nmbr="1">
+                    During seasons where rainfall is normal, coneflowers do not require any additional watering. 
+                </growthSteps>
+            </growthMethods>
+            
+            <!-- the following method is for dry season and indicating watering and enrichment of soil are unnecessary  -->
+            <growthMethods nmbr="3" condition="dry seasons">
+                <growthSteps nmbr="1">
+                    The coneflowers thrive in <soil type="growing">poor soil</soil> and are drought resistant, often thriving in dry seasons.
+                </growthSteps>
+            </growthMethods>
+            
+            <!-- the following method is applicable  to general situation  -->
+            <growthMethods nmbr="4" condition="general">
+                <growthSteps nmbr="1">
+                    Once the flowers die at the end of the season, cut the plant back by a third. This will encourage rejuvenation in the plant, and it may bloom a second time prior to the cold seasons.
+                </growthSteps>
+            </growthMethods>
+        </growth>
+        
+        
+        <!-- Section 5: Harvest -->
+        <harvest>
+            <title>To harvest:</title>
+            <possibleOutcome>
+                Coneflowers make excellent <outcome>cut flowers</outcome> due to their <outcome>vibrant color, long-lasting blooms</outcome> and <outcome>lengthy stems</outcome>. Their seeds also can be harvested for future planting.
+            </possibleOutcome>
+            
+            <harvestSteps nmbr="1">
+                Harvest seeds by clipping the heads of the plant when they have died. 
+            </harvestSteps>
+            <harvestSteps nmbr="2">
+                Pull off the petals and, while wearing <materials type="tools">gloves</materials>, rub the cone with your fingers to remove the seeds. 
+            </harvestSteps>
+            <harvestSteps nmbr="3">
+                Put seeds in <materials type="tools">a paper bag</materials> in a dry area and leave the seeds until they dry. Once dry, store in <materials type="tools">a sealed bag</materials> until you are ready to go through the germination process.
+            </harvestSteps>
+        </harvest>
+        
+        
+        <!-- Section 6: Craving -->
+        <craving>
+            <!-- Although the requiring amount of fertilizer is "a little bit", fertilizer is still considered as the item coneflowers needs. 
+                Therfore, the word "fertilizer" is labelled -->
+            <cravingItem>
+                Since coneflowers thrive on poor soil, they don’t require much <itemName type="fertilizer">fertilizer</itemName> to grow. However, a little bit can encourage the flowers. 
+            </cravingItem> 
+            
+            <!-- these sentences are all about the same item: granular fertilizer -->
+            <cravingItem>
+                During the coneflowers’ first season, fertilize them twice by <itemName type="fertilizer"> sprinkling granular fertilizer</itemName>around the plants. Fertilize new plants for the first time after six weeks of growth. 
+                Provide the second fertilization six weeks after the first. Established coneflower plants will be fed in a similar fashion with granular fertilizer but feed them for the first time prior to new growth in the spring. 
+                Continue to fertilize established coneflower plants every six weeks after the first feeding.
+            </cravingItem>
+        </craving>
+        
+        
+        <!-- Section 7: Advertisement -->
+        <advertisement>
+            <title>Where to buy Echinacae seeds:</title>
+            Urban Farmer has a variety of Coneflowers that are very attractive to butterflies
+            and birds.
+            
+            Check out out Echinacae seed selection on our website at 
+            <link url='ufseeds.com'>ufseeds.com!</link>
+        </advertisement>
+        
+        <!-- the information in page footer is less relevant to the scenarios I intend to create
+            therefore, detailed tags are not provided. -->
+        <pageFooter>
+            100% Non-GMO Seed
+            One Day shipping
+            100% Satisfaction Guarantee
+            Family Owned + Operated
+            Copyright 2018 © Urban Farmer. All rights reserved.
+        </pageFooter>
+    </instruction>
+    
+    
+    
+    <instruction type="Daisies">
+        
+        <!-- the information in page header is less relevant to the scenarios I intend to create
+            therefore, detailed mark-ups are not provided. -->
+        <pageHeader>
+            URBAN FARMER LOVE THE EARTH
+            120 E 161st Street, Westfield, Indiana 46074
+            Phone: 317-600-2807 • Email: customerservice@ufseeds.com
+            website: ufseeds.com
+        </pageHeader>
+        
+        
+        <!-- Section 1: Title -->
+        <!-- The title are divided into two parts:the  first level tells the scope, 
+            from Seed to Harvest and the difficulty level of the tutorial. The second part declares 
+            the name of the flower type of the instruction: Daisies and pictures -->
+        <articleTitle>
+            <instructionDescription>From Seed to Harvest:
+                A beginner’s guide to growing</instructionDescription>
+            <flowerName>Daisies</flowerName>
+            <photo filename="../img/Daisies.jpg"/>
+            <photoDescription>Painted Daisy seeds available at </photoDescription><website url='ufseeds.com'>ufseeds.com</website>
+            <photo filename="../img/Daisies2.jpg"/>
+            <photoDescription>Gloriosa Daisy seeds available at </photoDescription><website url='ufseeds.com'>ufseeds.com</website>
+        </articleTitle>
+        
+        
+        <!-- Section 2: Introduction -->
+        <!-- The introduction covers most of the characteristics of the flower -->    
+        <!--these characteristics are labeled so that it can be extracted and then rearranged 
+            with characteristics of flowers in other ten chosen materials   -->
+        <introduction>
+            Daisies are a member of the <family>aster</family> family and grow as <lifeCycle>perennials</lifeCycle>. 
+            Commonly, daisies are thought of having the old-fashioned blooms of white petals with a yellow center, but daisies can  <appearance><colors part="bloom">grow in all shapes, sizes and colors</colors></appearance>.
+        </introduction>
+        
+        
+        
+        <!-- In several instructions, a few planting steps are required only in special circumstances.
+            Using attributes to clarify the conditions allow stylesheet to fetch and display applicable  conditions 
+            efficiently, so that beginner gardeners could  know the applicability of each step. -->
+        <!-- Section 3: Planting -->
+        <planting>
+            <title>To plant:</title>
+            
+            <!-- this initial step is a general preparation-->
+            <plantingSteps nmbr="1" condition="general">
+                Daisies are planted by seeds or by divisions. 
+            </plantingSteps>
+            
+            <!-- the following three sentences are considered as one step, 
+                because only the first sentence contains actions: loose soil and plant seed.
+                the last two sentences gives more details for planting time and duration, but does not require further action -->
+            <plantingSteps nmbr="2" condition="general">
+                To plant the seeds, loosen the soil and plant seeds 1/8 inch deep. The seeds can be planted even when a light frost may still occur. Seeds should germinate in up to 20 days.
+            </plantingSteps>
+            
+            
+            <!-- this step is conditional -->
+            <plantingSteps nmbr="3" condition="seeding directly into the garden">
+                Daisy flowers can be seeded directly into the garden but if this is done, don’t expect blooms until the following spring.
+            </plantingSteps>
+        </planting>
+        
+        
+        <!-- Different from the planting steps, instruction of growing stage is relatively more
+            condition-oriented. Using attributes to clarify the conditions allow stylesheet to fetch 
+            and display applicable  conditions efficiently, so that beginner gardeners could  know
+            the applicability of each step. -->
+        <!-- Section 4: Growth -->
+        <growth>
+            <title>To grow:</title>
+            <growthMethods nmbr="1" condition="general">
+                <growthSteps nmbr="1">
+                    Once established, Daisies require little care. Daisies grow well in clumps, and make sure they receive at least <watering>1 inch of water per week</watering>. 
+                </growthSteps>
+                <growthSteps nmbr="2">
+                    Add <materials type="other">mulch</materials> to control weeds and retain moisture. 
+                </growthSteps>
+            </growthMethods>
+            
+            <!--  the following growth instruction applies to the condition of growing a taller variaty of Daisies
+                two sentences are labelled together because they are not sequential steps, but alternative methods for 
+                growing a  taller variety. Viewer should choose to do out of two or more possibilities -->
+            <growthMethods nmbr="2" condition="tall variaty">
+                <growthSteps nmbr="1">
+                    Since Daisies can grow very tall, sometimes <materials type="tools">staking</materials> is necessary to prevent wind damage. 
+                    Daisies also can support themselves if planted close together, or they can be planted along <materials type="tools">a fence row</materials> for more protection. 
+                </growthSteps>
+            </growthMethods>
+            
+            <growthMethods nmbr="3" condition="general">
+                <growthSteps nmbr="1">
+                    To keep strong plants, divide the daisies every three to four years.
+                </growthSteps>
+                
+                <growthSteps nmbr="2">
+                    To encourage the most growth, deadhead spent blooms.
+                </growthSteps>
+                
+                <growthSteps nmbr="3">
+                    Once blooms finally fade, usually in mid-fall, cut the Daisies back to the ground. 
+                </growthSteps>
+                
+                <growthSteps nmbr="4">
+                    To prevent disease, do not overhead water the Daisies.
+                </growthSteps>
+            </growthMethods>
+        </growth>
+        
+        
+        
+        <!-- Section 5: Harvest -->
+        <harvest>
+            <title>To harvest:</title>
+            <possibleOutcome>
+                Daisies will bloom until fall. Because of their long, strong stems, they make great <outcome>cut flowers</outcome>. 
+                Once Daisies bloom once, Shasta Daisies might put out <outcome>new, fresh leaves</outcome> and <outcome>bloom again</outcome> before the end of the fall.
+            </possibleOutcome>
+            
+            <harvestSteps nmbr="1">
+                Daisy seeds can be harvested, too. Wait for the flowers to dry out and, if harvesting the seeds, do not deadhead the blooms.
+            </harvestSteps>
+            <harvestSteps nmbr="2">
+                Cut the flowers and hang them upside down to dry. Seeds are kept in the Daisy heads.
+            </harvestSteps>
+            <harvestSteps nmbr="3">
+                Once the flowers have dried, crush the heads and remove the seeds.
+            </harvestSteps>
+        </harvest>
+        
+        
+        
+        <!-- Section 6: Craving -->
+        <craving>
+            <title>What Daisies crave:</title>
+            <cravingItem condition="planted by seed">
+                If planted by seed, wait a full year’s growth and then use <itemName type="fertilizer">an all-purpose fertilizer</itemName> in the early spring. 
+            </cravingItem>
+            <cravingItem condition="planted by seed">
+                Just prior to blooming, fertilize the Daisies with <itemName type="fertilizer">a fertilizer that is high in phosphorous</itemName>, which will enhance the blooming period and produce better flowers.
+            </cravingItem>
+            <cravingItem condition="container-grown">
+                If growing in containers, use <itemName type="fertilizer">a slow-acting fertilizer</itemName> upon planting and then fertilize with <itemName type="fertilizer">a diluted liquid fertilizer</itemName> each time you water.
+            </cravingItem>
+        </craving>
+        
+        
+        
+        <!-- Section 7: Advertisement -->
+        <advertisement>
+            <title>Where to buy Daisy seeds:</title>
+            Urban Farmer sells different kinds of Daisy seeds that bloom in a variety of bright colors.
+            Check out our Daisy seed selection on our website at <link url='ufseeds.com'>ufseeds.com</link>!
+        </advertisement>
+        
+        
+        <!-- the information in page footer is less relevant to the scenarios I intend to create
+            therefore, detailed tags are not provided. -->
+        <pageFooter>
+            100% Non-GMO Seed
+            One Day shipping
+            100% Satisfaction Guarantee
+            Family Owned + Operated
+            Copyright 2018 © Urban Farmer. All rights reserved.
+        </pageFooter>
+    </instruction>
+    
+    
+    <instruction type="Marigolds">
+        
+        <!-- the information in page header is less relevant to the scenarios I intend to create
+            therefore, detailed mark-ups are not provided. -->
+        <pageHeader>
+            URBAN FARMER LOVE THE EARTH
+            120 E 161st Street, Westfield, Indiana 46074
+            Phone: 317-600-2807 • Email: customerservice@ufseeds.com
+            website: ufseeds.com
+        </pageHeader>
+        
+        
+        <!-- Section 1: Title -->
+        <!-- The title are divided into two parts:the  first level tells the scope, 
+            from Seed to Harvest and the difficulty level of the tutorial. The second part declares 
+            the name of the flower type of the instruction: Marigolds and pictures -->
+        <articleTitle>
+            <instructionDescription>From Seed to Harvest:
+                A beginner’s guide to growing</instructionDescription>
+            <flowerName>Marigolds</flowerName>
+            <photo filename="../img/Marigolds.jpg"/>
+            <photoDescription>Petite Mix Marigold seeds available at </photoDescription><website url='ufseeds.com'>ufseeds.com</website>
+            <photo filename="../img/Marigolds2.jpg"/>
+            <photoDescription>Crackerjack Marigold seeds available at </photoDescription><website url='ufseeds.com'>ufseeds.com</website>
+        </articleTitle>
+        
+        <!-- Section 2: Introduction -->
+        <!-- The introduction covers most of the characteristics of the flower -->    
+        <!--these characteristics are labeled so that it can be extracted and then rearranged 
+            with characteristics of flowers in other ten chosen materials   -->
+        <introduction>
+            Marigolds are a popular, long-lasting and brilliantly colored flowers. Marigolds are commonly grown as <lifeCycle>annuals</lifeCycle>, but some varieties are <lifeCycle>perennials</lifeCycle>.
+            The flowers bloom in <appearance><colors part="bloom">yellow, gold and orange</colors></appearance> and are hardy plants that grow well in <bed type="flower-bed">flower beds</bed>, <bed type="container">containers</bed> or as <bed type="other">cut arrangements</bed>. 
+            In addition to their fiery appearance, Marigolds also naturally repel <insect type="rebel">mosquitos</insect>.
+        </introduction>
+        
+        
+        
+        <!-- Section 3: Planting -->
+        <planting>
+            <title>To plant:</title>
+            <plantingSteps nmbr="1" condition="general">
+                Begin Marigolds inside eight weeks before the last frost. 
+            </plantingSteps>
+            
+            <plantingSteps nmbr="2" condition="general">
+                Fill <materials type="tools">a seed-starting tray</materials> with <materials type="other">soilless potting mix</materials> and sprinkle the seeds over the surface.
+            </plantingSteps>
+            
+            <plantingSteps nmbr="3" condition="general">
+                Cover the seeds with <materials type="other">a thin layer of vermiculture</materials>, then cover the tray with <materials type="tools">plastic</materials> and place in a <temperature type="planting">warm</temperature> area, such as the top of a refrigerator. 
+            </plantingSteps>
+            
+            <plantingSteps nmbr="4" condition="general">
+                Marigolds do not require light to germinate. Marigolds seeds will sprout in as little as four days, and once seedlings appear, remove the plastic and move to a <exposure>sunny</exposure> location.
+            </plantingSteps>
+        </planting>
+        
+        
+        
+        
+        <!--  the following growth instruction applies to the condition of growing the taller type of Cosmos
+            two sentences are labelled together because they are not sequential steps, but alternative methods for 
+            growing a  taller variety -->
+        <!-- Section 4: Growth -->
+        <growth>
+            <title>To grow:</title>
+            
+            <!-- the following growth method is for general cases -->
+            <growthMethods nmbr="1" condition="general">
+                <growthSteps nmbr="1">
+                    Once seedlings have two true sets of leaves, move to their own <materials type="tools">pot</materials> and continue growing <location type="growing">indoors</location> until the last frost has passed.
+                </growthSteps>
+                
+                <!-- theses two sentences are grouped together as one step because both of them advise what is the ideal  lcoation for growing Marigolds.-->
+                <growthSteps nmbr="2">
+                    Transplant them outdoors in a sunny location. Since Marigolds are hardy, they grow well in <moisture>moist</moisture> or <moisture>dry</moisture> conditions.
+                </growthSteps>
+                
+                <growthSteps nmbr="3">
+                    Encourage more growth by deadheading the spent blooms.
+                </growthSteps>
+            </growthMethods>
+            
+            <!-- the following growth method is for ground-planted growth -->
+            <growthMethods nmbr="2" condition="ground-planted">
+                <growthSteps nmbr="1">
+                    If planted in the ground, only water the Marigolds if dry weather persists for more than two weeks. 
+                </growthSteps>
+            </growthMethods>
+            <!-- the following growth method is for container-planted growth -->
+            <growthMethods nmbr="3" condition="container-planted">
+                <growthSteps nmbr="1" >
+                    Water Marigolds daily if they are growing in a container.
+                </growthSteps>
+            </growthMethods>
+        </growth>
+        
+        <!-- Section 5: Harvest -->
+        <harvest>
+            <title>To harvest:</title>
+            <possibleOutcome>To harvest Marigolds as <outcome>cut flowers</outcome></possibleOutcome>,
+            <harvestSteps nmbr="1">
+                harvest in the early morning when the blooms are just beginning to open.
+            </harvestSteps>
+            <harvestSteps nmbr="2">
+                Set the freshly cut stems in a <materials type="tools">vase</materials> with <materials type="other">warm water</materials>. 
+            </harvestSteps>
+            <harvestSteps nmbr="3">
+                After two hours, strip the lower leaves that are submerged in water. Marigolds will live a week in the vase if they are properly maintained. 
+            </harvestSteps>
+            
+            <possibleOutcome>Individual Marigold flowers can be harvested as a <outcome>garnish</outcome> for culinary dishes. </possibleOutcome>
+            <harvestSteps nmbr="1">
+                To do so, cut the stem 1 inch from the ground on a sunny day. 
+            </harvestSteps>
+            <harvestSteps nmbr="2">
+                Wash the entire stem and flower and only remove the stem immediately prior to serving so the flower has the best flavor.
+            </harvestSteps>
+            
+            
+            <possibleOutcome><outcome>Marigold seeds also can be harvested</outcome>  while deadheading spent blooms.</possibleOutcome>
+            <harvestSteps nmbr="1">
+                Once deadheaded, the dead blooms can be kept in a dry, cool place and seeds can be harvested for the following year.
+            </harvestSteps>
+        </harvest>
+        
+        
+        <!-- Section 6: Craving -->
+        <craving>
+            <title>What Marigolds crave:</title>
+            <cravingItem condition="general">
+                In the spring after setting Marigolds out in the garden, feed them with <itemName type="fertilizer">a slow-release 11-40-6 granular fertilizer</itemName>. 
+            </cravingItem>
+            
+            <cravingItem condition="perennials">
+                If growing Marigold perennials, feed them each spring before new growth appears. Add a <itemName type="fertilizer">water-soluble fertilizer</itemName> to the Marigolds
+                once a month. 
+            </cravingItem>
+            
+            <cravingItem  condition="container-grown">
+                For container-grown Marigolds, fertilize them every four to six weeks with <itemName type="fertilizer">a balanced liquid fertilizer</itemName>. 
+            </cravingItem>
+            
+            <restriction  condition="perennials">
+                If growing perennial Marigolds, do not fertilize in the winter months . 
+            </restriction>
+            
+            <restriction condition="general">
+                Be careful to not overfeed the Marigolds, as too much fertilizer will increase leaf production and decrease bloom production.
+            </restriction>
+        </craving>
+        
+        
+        
+        <!-- Section 7: Advertisement -->
+        <advertisement>
+            <title>Where to buy Marigold seeds:</title>
+            Urban Farmer sells a wide variety of Marigold in dwarf mixes and in double blooms that can reach up to 12 inches tall.
+            Check out our Marigold seed selection on our website at <link url='ufseeds.com'>ufseeds.com</link>!
+        </advertisement>
+        
+        <!-- the information in page footer is less relevant to the scenarios I intend to create
+            therefore, detailed tags are not provided. -->
+        <pageFooter>
+            100% Non-GMO Seed
+            One Day shipping
+            100% Satisfaction Guarantee
+            Family Owned + Operated
+            Copyright 2018 © Urban Farmer. All rights reserved.
+        </pageFooter>
+    </instruction>
+    
+    
+    
+    <instruction type="Phlox">
+        
+        <!-- the information in page header is less relevant to the scenarios I intend to create
+            therefore, detailed mark-ups are not provided. -->
+        <pageHeader>
+            URBAN FARMER LOVE THE EARTH
+            120 E 161st Street, Westfield, Indiana 46074
+            Phone: 317-600-2807 • Email: customerservice@ufseeds.com
+            website: ufseeds.com
+        </pageHeader>
+        
+        <!-- Section 1: Title -->
+        <!-- The title are divided into two parts:the first level tells the scope, 
+            from Seed to Harvest and the difficulty level of the tutorial. The second part declares 
+            the name of the flower type of the instruction: Cosmos and pictures -->
+        <articleTitle>
+            <instructionDescription>From Seed to Harvest:
+                A beginner’s guide to growing</instructionDescription>
+            <flowerName>Phlox</flowerName>
+            <photo filename="../img/Phlox.jpg"/>
+            <photoDescription>Moody Blues Phlox seeds available at </photoDescription><website url='ufseeds.com'>ufseeds.com</website>
+            <photo filename="../img/Phlox2.jpg"/>
+            <photoDescription>Divaricata Phlox seeds available at </photoDescription><website url='ufseeds.com'>ufseeds.com</website>
+        </articleTitle>
+        
+        
+        
+        <!-- Section 2: Introduction -->
+        <!-- The introduction covers most of the characteristics of the flower -->    
+        <!--these characteristics are labeled so that it can be extracted and then rearranged 
+            with characteristics of flowers in other ten chosen materials   -->
+        <introduction>
+            <appearance><colors part="bloom">Phlox adds an array of color</colors></appearance> to the garden and has fragrant blooms. It has two varieties --- tall and creeping. The tall-growing variety is often used in the back of the garden so it doesn’t shade other plants, whereas the creeping variety can be used as a groundcover. Phlox blooms in a star-shaped flower.
+        </introduction>
+        
+        
+        
+        <!-- In several instructions, a few planting steps are required only in special circumstances.
+            Using attributes to clarify the conditions allow stylesheet to fetch and display applicable  conditions 
+            efficiently, so that beginner gardeners could  know the applicability of each step. -->
+        <!-- Section 3: Planting -->
+        <planting>
+            <title>To plant:</title>
+            <plantingSteps nmbr="1" condition="general">
+                Plant Phlox <location type="planting">indoors</location> up to eight weeks before the last spring frost. 
+            </plantingSteps>
+            
+            <plantingSteps nmbr="2" condition="general">
+                Plant Phlox seeds in <soil type="planting">a potting soil</soil> and space them <space type="planting">1 inch apart</space>and 1/8 inch deep. 
+            </plantingSteps>
+            
+            <plantingSteps nmbr="3" condition="general">
+                Mist the top of the soil with <materials type="tools">a spray bottle</materials>. 
+            </plantingSteps>
+            
+            <plantingSteps nmbr="4" condition="general">
+                To help retain moisture, cover the <materials type="tools">container</materials> with <materials type="tools">a plastic bag</materials> and keep the seeds in a <temperature type="planting">warm</temperature>, <exposure>dark area</exposure> indoors.
+            </plantingSteps>
+            
+            <plantingSteps nmbr="5" condition="general">
+                Phlox seeds should germinate in 10 days. Once the seedlings have sprouted, move the container to a <location type="planting">bright area</location> and remove the plastic.
+            </plantingSteps>
+        </planting>
+        
+        
+        
+        <!-- Different from the planting steps, instruction of growing stage is relatively more
+            condition-oriented. Using attributes to clarify the conditions allow stylesheet to fetch 
+            and display applicable  conditions efficiently, so that beginner gardeners could  know
+            the applicability of each step. -->
+        <!-- Section 4: Growth -->
+        <growth>
+            <title>To grow:</title>
+            
+            <!-- the following growth method is for general cases -->
+            <growthMethods nmbr="1" condition="general">
+                <growthSteps nmbr="1">
+                    Seedlings are ready to transplant after the last frost date in the area.
+                </growthSteps>
+                
+                <growthSteps nmbr="2">
+                    When transplanting, space the seedlings <space type="growing">10 inches apart</space>.
+                </growthSteps>
+            </growthMethods>
+            
+            <!-- the following growth method is for restricted conditions, such as mix growth and tough growing conditions -->
+            <growthMethods nmbr="2" condition="restricted conditions">
+                <growthSteps nmbr="1">
+                    Although tall-growing Phlox should be grown in the back of a garden to not shade sun-loving plants, creeping Phlox does well in rocky soils or tough growing conditions.
+                </growthSteps>
+            </growthMethods>
+            
+            <!-- the following growth method is for general cases -->
+            <growthMethods nmbr="3" condition="general">
+                <growthSteps nmbr="1">
+                    Phlox should still <watering>be watered regularly</watering> during its growing season.
+                </growthSteps>
+            </growthMethods>
+            
+            <!-- the two sentences are both about how and when to cut the plants in order to  
+                encourage a second bloom and this method is not necessarily required. -->
+            <growthMethods nmbr="4" condition="second bloom">
+                <growthSteps nmbr="1">
+                    To encourage a second bloom in the same season, cut the plants back after the first flowering. 
+                </growthSteps>
+                <growthSteps nmbr="2">
+                    Also, cut the plants back before winter so new growth returns in the spring.
+                </growthSteps>
+            </growthMethods>
+            
+            <growthMethods nmbr="5" condition="general">
+                <!-- The sentences should be considered as one step because they first explained the reasons 
+                    why regulat division is necessary and then the detailed guidance of how to divide. 
+                    Only one action is referred in here-->
+                <growthSteps nmbr="1">
+                    Phlox returns year after year because it is a <lifeCycle>perennial</lifeCycle>, but division is necessary every few years to produce the healthiest plant. To divide Phlox, dig up the root ball and divide it in half.
+                </growthSteps>
+                <growthSteps nmbr="2">
+                    Replant half and plant the second half in a new location.
+                </growthSteps>
+            </growthMethods>
+        </growth>
+        
+        
+        
+        <!-- Section 5: Harvest -->
+        <harvest>
+            <title>To harvest:</title>
+            <possibleOutcome>Even though the are small, Phlox make
+                good <outcome>cut flowers</outcome>. </possibleOutcome>
+            
+            <!-- the following sentences demostrate that Phlox seeds can also be harvested and the corresponding steps-->
+            <possibleOutcome>
+                Their <outcome>seeds also can be harvested to be replanted</outcome> in the future since they are <lifeCycle>annuals</lifeCycle>  and will not return on their own. 
+            </possibleOutcome>
+            <harvestSteps nmbr="1">
+                To save the seeds, allow a few blooms to remain on the plant until they have died. The seed pod will remain once the petals fall away. 
+            </harvestSteps>
+            <harvestSteps nmbr="2">
+                Cut the pods off the plant and place the pods in <materials type="tools">a paper sack</materials> to store <location type="harvest">indoors</location> while the seed pods dry.
+            </harvestSteps>
+            <harvestSteps nmbr="3">
+                Break open the pods and keep the seeds in <materials type="tools">a paper envelope</materials> until ready to plant the following year.
+            </harvestSteps>
+        </harvest>
+        
+        <!-- Section 6: Craving -->
+        <craving>
+            <title>What Phlox craves:</title>
+            
+            <!-- the following sentences demonstrate that fertilizer is what  Phlox needs and how the application 
+                of it can benefit  Phlox -->
+            <cravingItem condition="spring">
+                Phlox does well in tough-growing conditions, but it can benefit from <itemName type="fertilizer">an early application of fertilizer</itemName> in the spring. Applying the fertilizer in the spring will encourage new growth and flowers. 
+            </cravingItem>
+            <cravingItem condition="spring and summer">
+                Apply <itemName type="fertilizer">a water-soluble fertilizer</itemName> to the plants once a month in the spring and summer months to encourage growth all season long.
+            </cravingItem>
+            <cravingItem  condition="feed once">
+                If you want to only feed Phlox once, opt out of the water-soluble fertilizer and only feed it once in the early spring with <itemName type="fertilizer">a granular, timed-release fertilizer</itemName>.
+            </cravingItem>
+        </craving>
+        
+        
+        
+        <!-- Section 7: Advertisement -->
+        <advertisement>
+            <title>Where to buy Phlox seeds:</title>
+            Urban Farmer sells different kinds of Phlox seeds that produce colorful and fragrant blooms.
+            Check out our Phlox seed selection on our website at <link url='ufseeds.com'>ufseeds.com</link>!
+        </advertisement>
+        
+        <!-- the information in page footer is less relevant to the scenarios I intend to create
+            therefore, detailed tags are not provided. -->
+        <pageFooter>
+            100% Non-GMO Seed
+            One Day shipping
+            100% Satisfaction Guarantee
+            Family Owned + Operated
+            Copyright 2018 © Urban Farmer. All rights reserved.
+        </pageFooter>
+        
+    </instruction>
+    
+    <instruction type="Poppies">
+        
+        <!-- the information in page header is less relevant to the scenarios I intend to create
+            therefore, detailed mark-ups are not provided. -->
+        <pageHeader>
+            URBAN FARMER LOVE THE EARTH
+            120 E 161st Street, Westfield, Indiana 46074
+            Phone: 317-600-2807 • Email: customerservice@ufseeds.com
+            website: ufseeds.com
+        </pageHeader>
+        
+        
+        <!-- Section 1: Title -->
+        <!-- The title are divided into two parts:the  first level tells the scope, 
+            from Seed to Harvest and the difficulty level of the tutorial. The second part declares 
+            the name of the flower type of the instruction: Poppies and pictures -->
+        <articleTitle>
+            <instructionDescription>From Seed to Harvest:
+                A beginner’s guide to growing</instructionDescription>
+            <flowerName>Poppies</flowerName>
+            <photo filename="../img/Poppies.jpg"/>
+            <photoDescription>Great Red Poppy seeds available at </photoDescription><website url='ufseeds.com'>ufseeds.com</website>
+            <photo filename="../img/Poppies2.jpg"/>
+            <photoDescription>California Poppy seeds available at </photoDescription><website url='ufseeds.com'>ufseeds.com</website>
+        </articleTitle>
+        
+        
+        <!-- Section 2: Introduction -->
+        
+        <!-- The introduction covers most of the characteristics of the flower. Tthese characteristics are labeled so that 
+            it can be extracted and then rearranged with characteristics of flowers in other ten chosen materials   -->
+        <introduction>
+            
+            Poppies are an <lifeCycle>annual</lifeCycle> planted each spring that will bring a burst of color to the garden. Once planted, Poppies are easy to care for. 
+            They are assumed to come in colors of <appearance><colors part="bloom">red</colors></appearance>, but they also come in colors of <appearance><colors part="bloom">white, pink and orange</colors></appearance> .
+            Poppies come in both single and double blooms. Oftentimes, the red Poppy is used to symbolize  fallen warriors and it commemorates  Veteran’s Day.
+            
+        </introduction>
+        
+        
+        <!-- In several instructions, a few planting steps are required only in special circumstances.
+            Using attributes to clarify the conditions allow stylesheet to fetch and display applicable  conditions 
+            efficiently, so that beginner gardeners could  know the applicability of each step. -->
+        <!-- Section 3: Planting -->
+        <planting>
+            <title>To plant:</title>
+            
+            <!--  the first sentences tells how to sow Poppies, and the second sentence explains why it should be done so,  
+                therefore,  the two sentences are considered as one step as both of them are related to one action. -->
+            <plantingSteps nmbr="1" condition="general">
+                Poppies should be sown directly into the garden because they grow from a taproot, which makes the Poppy not a good transplant flower. If the taproot is disturbed during transplanting, the Poppy will die.
+            </plantingSteps>
+            
+            <plantingSteps nmbr="2" condition="indoors">
+                If you must start the Poppy seeds indoors, use <materials type="tools">peat pots</materials> that can be directly planted into the garden so the Poppy taproot isn’t disturbed.
+            </plantingSteps>
+            
+            <plantingSteps nmbr="3" condition="outside">
+                Direct sow the Poppy seeds outside in a <soil type="planting">poor to average</soil> soil. Barely cover the seeds, or leave them on the surface of the soil. 
+            </plantingSteps>
+            
+            
+            <!-- the material is from an American website, planting conditions could be rather different to their target audience -->
+            <!-- These two sentences are labelled together because they are not sequential steps, but alternative for 
+                growing Poppies in different locations. Viewer should choose one step  to do out of two possibilities
+                therefore,  the two sentences are considered as one step as both of them are related to one action: sow. -->
+            <plantingSteps nmbr="4" condition="Different zones">
+                If you live in Zones 3-7, direct sow seeds <location type="planting">outdoors</location> in the early spring when a frost may still occur.
+                If you live in Zones 8-10, direct sow Poppy seeds in the fall.
+            </plantingSteps>
+        </planting>
+        
+        
+        
+        <!-- Different from the planting steps, instruction of growing stage is relatively more
+            condition-oriented. Using attributes to clarify the conditions allow stylesheet to fetch 
+            and display applicable  conditions efficiently, so that beginner gardeners could  know
+            the applicability of each step. -->
+        <!-- Section 4: Growth -->
+        <growth>
+            <title>To grow:</title>
+            <growthMethods nmbr="1" condition="general">
+                <growthSteps nmbr="1">
+                    When the Poppies sprout, thin them to <space type="growing">6 inches apart</space>.
+                </growthSteps>
+                
+                <!-- the two sentences are considered as one step as both of them refers to the step of watering. -->
+                <growthSteps nmbr="2">
+                    Once Poppies are established, they <watering>do not require frequent watering</watering>. Overwatering will result in leggy and tall Poppies. 
+                </growthSteps>
+                
+                <growthSteps nmbr="3">
+                    They do require deadheading and removing the spent blooms can encourage more blooms to grow. 
+                </growthSteps>
+            </growthMethods>
+            
+            
+            <growthMethods nmbr="2" condition="limited spread">
+                <growthSteps nmbr="1">
+                    Poppies self-sow, and if you don’t want them to spread and sprout in surprising places, pull the plants from the ground once they have finished blooming.
+                </growthSteps>
+            </growthMethods>
+        </growth>
+        
+        
+        
+        <!-- Section 5: Harvest -->
+        <harvest>
+            <title>To harvest:</title>
+            
+            <!-- Both of the two sentences refer to the use of harvested Poppies as a cooking material -->
+            <possibleOutcome>
+                Poppies are typically not harvested as cut flowers because their blooms will not keep for long, but their seeds can be harvested to be used as <outcome>poppyseeds</outcome> in cooking. If using for culinary purposes, be sure to plant the Breadseed Poppy variety. 
+            </possibleOutcome>
+            <harvestSteps nmbr="1">
+                Seedpods will form after the blooms die. Once the seeds can be shaken inside the pod, the pod is ready to clip off the plant. 
+            </harvestSteps>
+            <harvestSteps nmbr="2">
+                Cut the pods open and spread the seeds out in a single layer and let dry for a week. 
+            </harvestSteps>
+            <harvestSteps nmbr="3">
+                Once completely dry, store in <materials type="tools">an airtight container </materials> until ready to use for baking.
+            </harvestSteps>
+        </harvest>
+        
+        
+        
+        <!-- Section 6: Craving -->
+        <craving>
+            <title>What Poppies crave:</title>
+            <cravingItem>
+                To encourage the best Poppies to grow, fertilize the Poppies once a year and then top-dress the plants with an organic material, such as <itemName type="other">manure</itemName>. 
+            </cravingItem>
+            <cravingItem>
+                Fertilize the Poppies with <itemName type="fertilizer">a slow-release granular fertilizer</itemName> in the spring once the soil is warm enough to be worked.
+            </cravingItem>
+            
+            <cravingItem>
+                Follow the dosage instructions on the fertilizer, and then mix the fertilizer in with <itemName type="other">the top inch of soil</itemName>. 
+            </cravingItem>
+            
+            <!-- manure is labelled already, therefore, only compost is labelled in here.  -->
+            <cravingItem>
+                After you fertilize, add a top-dressing of organic material like manure or <itemName type="compost">compost</itemName>. Make sure the organic material is a few inches thick. 
+            </cravingItem>
+            
+            <cravingItem>
+                After applying the fertilizer and compost, <itemName type="other">water</itemName> the plants deeply.
+            </cravingItem>
+            
+            <restriction condition="with compost" >
+                Since compost is applied, mulch is not needed as the compost will prevent weeds and continuously provide nutrients to the Poppy plant.
+            </restriction>
+        </craving>
+        
+        
+        <!-- Section 7: Advertisement -->
+        <advertisement>
+            <title>Where to buy Poppy seeds:</title>
+            Urban Farmer offers a variety of Poppy seeds in the colors of orange, red, pink, white and more.
+            Check out our Poppy seed selection on our website at <link url='ufseeds.com'>ufseeds.com</link>!
+        </advertisement>
+        
+        
+        <!-- the information in page footer is less relevant to the scenarios I intend to create
+            therefore, detailed tags are not provided. -->
+        <pageFooter>
+            100% Non-GMO Seed
+            One Day shipping
+            100% Satisfaction Guarantee
+            Family Owned + Operated
+            Copyright 2018 © Urban Farmer. All rights reserved.
+        </pageFooter>
+    </instruction>
+    
+    
+    <instruction type="Rudbeckia">
+        
+        <!-- the information in page header is less relevant to the scenarios I intend to create
+            therefore, detailed tags are not provided. -->
+        <pageHeader>
+            URBAN FARMER LOVE THE EARTH
+            120 E 161st Street, Westfield, Indiana 46074
+            Phone: 317-600-2807 • Email: customerservice@ufseeds.com
+            website: ufseeds.com
+        </pageHeader>
+        
+        <!-- Section 1: Title -->
+        <!-- The title are divided into two parts:the  first level tells the scope, 
+            from Seed to Harvest and the difficulty level of the tutorial. The second part declares 
+            the name of the flower type of the instruction: Rudbeckia and pictures -->
+        <articleTitle>
+            <instructionDescription>From Seed to Harvest:
+                A beginner’s guide to growing</instructionDescription>
+            <flowerName>Rudbeckia</flowerName>
+            <photo filename="../img/Rudbeckia.jpg"/>
+            <photoDescription>Cherry Brandy Rudbeckia seeds available at </photoDescription><website url='ufseeds.com'>ufseeds.com</website>
+            <photo filename="../img/Rudbeckia2.jpg"/>
+            <photoDescription>Chim Chiminee Rudbeckia seeds available at </photoDescription><website url='ufseeds.com'>ufseeds.com</website>
+        </articleTitle>
+        
+        <!-- Section 2: Introduction -->
+        <!-- The introduction covers most of the characteristics of the flower -->    
+        <!--these characteristics are labeled so that it can be extracted and then rearranged 
+            with characteristics of flowers in other ten chosen materials   -->
+        <introduction>
+            Rudbeckias are a very popular flower in most gardens. They vary in color from <appearance><colors part="petal">green, yellow, orange, brown and red</colors></appearance> petals.
+            Rudbeckia also are known as Black-eyed Susans. 
+            They are heat and <moisture>drought tolerant</moisture> and are generally low-maintenance plants.
+            They also attract <insect type="attraction">bees</insect> and <insect type="attraction">butterflies</insect> to the garden. 
+            Rudbeckia grow in <lifeCycle>annual</lifeCycle> and <lifeCycle>perennial</lifeCycle> varieties, but the annual varieties may self sow.
+        </introduction>
+        
+        
+        
+        <!-- In several instructions, a few planting steps are required only in special circumstances.
+            Using attributes to clarify the conditions allow stylesheet to fetch and display applicable  conditions 
+            efficiently, so that beginner gardeners could  know the applicability of each step. -->
+        <!-- Section 3: Planting -->
+        <planting>
+            <title>To plant:</title>
+            <plantingSteps nmbr="1" condition="general">
+                Begin Rudbeckia seeds six to eight weeks before the last frost or direct sow them into the garden two weeks before the last frost.
+            </plantingSteps>
+            
+            <plantingSteps nmbr="2" condition="indoors">
+                When starting seeds indoors, sow seeds 1/8-inch-deep in <materials type="other">a seed-starting formula</materials> and provide <exposure>bright light</exposure> after planting. Seeds should germinate in 21 days or less. 
+            </plantingSteps>
+            
+            <plantingSteps nmbr="3" condition="general">
+                Once seedlings emerge, move them to a <exposure>sunny</exposure> <location type="planting">windowsill</location> or under <materials type="other">fluorescent lights</materials>, but do not provide light for 24 hours at a time, as seedlings require a dark period as well.
+            </plantingSteps>
+        </planting>
+        
+        
+        
+        <!-- Different from the planting steps, instruction of growing stage is relatively more
+            condition-oriented. Using attributes to clarify the conditions allow stylesheet to fetch 
+            and display applicable  conditions efficiently, so that beginner gardeners could  know
+            the applicability of each step. -->
+        <!-- Section 4: Growth -->
+        <growth>
+            <title>To grow:</title>
+            <growthMethods nmbr="1" condition="general">
+                <!-- the following six steps are applicable for general cases  -->
+                
+                <!--  the first two sentences explains what is hardening off and the reason why Rudbeckia should be hardened off, 
+                    and the second sentence illustrates how to so. Therefore,  the three sentences are considered as one step as they are all related to only one action. -->
+                <growthSteps nmbr="1">
+                    Prior to transplanting outdoors, Rudbeckia need to be hardened off. Hardening off means accustoming the plants to <location type="growing">outdoor</location> living. To do so, move the seedlings to a <exposure>sheltered outdoor place</exposure> protected from the wind and sun for a week. 
+                </growthSteps>
+                
+                <growthSteps nmbr="2">
+                    After hardening the Rudbeckia off, space the seedlings <space type="growing">12 inches apart </space>in an area with <exposure>full sun</exposure> but be sure to transplant on an overcast day.
+                </growthSteps>
+                
+                <growthSteps nmbr="3">
+                    Although Rudbeckia is <moisture>drought tolerant</moisture>, it does require <watering>water, especially in hot weather</watering>. 
+                </growthSteps>
+                
+                <growthSteps nmbr="4">
+                    To encourage more growth, deadhead spent blooms regularly. 
+                </growthSteps>
+                
+                <growthSteps nmbr="5">
+                    To grow the best flowers, be sure to weed regularly and deter weeds by spreading <materials type="other">mulch</materials> around the base of the plant. Mulch also will help retain moisture.
+                </growthSteps>
+                
+                <growthSteps nmbr="6">
+                    When plants become crowded, divide them, as blooms will diminish if overcrowded. Divide the plants every three to four years.
+                </growthSteps>
+            </growthMethods>
+        </growth>
+        
+        
+        
+        <!-- Section 5: Harvest -->
+        <harvest>
+            <title>To harvest:</title>
+            <possibleOutcome>
+                Rudbeckia make excellent <outcome>cut flowers</outcome> due to their <outcome>long, strong stems and long-lasting blooms</outcome>. 
+            </possibleOutcome>
+            <harvestSteps nmbr="1">
+                Cut the flowers when they are fully open and place them in <materials type="other">a vase</materials>.
+            </harvestSteps>
+        </harvest>
+        
+        
+        
+        <!-- Section 6: Craving -->
+        <craving>
+            <title>What Rudbeckia craves:</title>
+            <cravingItem>
+                When Rudbeckia are seedlings, they do not require much fertilizer. Feed the Rudbeckia when it is three or four weeks old with <itemName type="other">a starter solution</itemName>, which is half strength of complete indoor houseplant food.
+            </cravingItem>
+            
+            <cravingItem>
+                For an organic approach to fertilizing Rudbeckia once it is grown, top dress the plants with <itemName type="other">well-rotted manure</itemName> once a year.
+            </cravingItem>
+        </craving>
+        
+        
+        
+        <!-- Section 7: Advertisement -->
+        <advertisement>
+            <title>Where to buy Rudbeckia seeds:</title>
+            Urban Farmer sells a wide selection of Rudbeckia seeds that bloom beautiful brightly colored petals.
+            Check out our Rudbeckia seed selection on our website at <link url='ufseeds.com'>ufseeds.com</link>!
+        </advertisement>
+        
+        
+        <!-- the information in page footer is less relevant to the scenarios I intend to create
+            therefore, detailed tags are not provided. -->
+        <pageFooter>
+            100% Non-GMO Seed
+            One Day shipping
+            100% Satisfaction Guarantee
+            Family Owned + Operated
+            Copyright 2018 © Urban Farmer. All rights reserved.
+        </pageFooter>
+    </instruction>
+    
+    
+    <instruction type="Salvia">
+        
+        <!-- the information in page header is less relevant to the scenarios I intend to create
+            therefore, detailed tags are not provided. -->
+        <pageHeader>
+            URBAN FARMER LOVE THE EARTH
+            120 E 161st Street, Westfield, Indiana 46074
+            Phone: 317-600-2807 • Email: customerservice@ufseeds.com
+            website: ufseeds.com
+        </pageHeader>
+        
+        
+        <!-- Section 1: Title -->
+        <!-- The title are divided into two parts:the  first level tells the scope, 
+            from Seed to Harvest and the difficulty level of the tutorial. The second part declares 
+            the name of the flower type of the instruction: Salvia and pictures-->
+        <articleTitle>
+            <instructionDescription>rom Seed to Harvest:
+                A beginner’s guide to growing</instructionDescription>
+            <flowerName>Salvia</flowerName>
+            <photo filename="../img/Salvia.jpg"/>
+            <photoDescription>Victoria salvia seeds available at </photoDescription><website url='ufseeds.com'>ufseeds.com</website>
+            <photo filename="../img/Salvia2.jpg"/>
+            <photoDescription>Rose Queen seeds available at </photoDescription><website url='ufseeds.com'>ufseeds.com</website>
+        </articleTitle>
+        
+        
+        
+        <!-- Section 2: Introduction -->
+        <!-- The introduction covers most of the characteristics of the flower -->    
+        <!--these characteristics are labeled so that it can be extracted and then rearranged 
+            with characteristics of flowers in other ten chosen materials   -->
+        <introduction>
+            Salvia is a good plant to grow if a gardener is looking for variety, since this plant has more than 700 species. 
+            It has both <lifeCycle>annual</lifeCycle> and <lifeCycle>perennial</lifeCycle> varieties.
+            Salvia blooms are spiky flowershat grow on bushy plants.
+            They can reach 10 to <appearance><maxHeight>60 inches </maxHeight></appearance> in height, but most varieties are below 36 inches.
+            Salvia blooms in many colors, including <appearance><colors part="bloom">red, scarlet and blue</colors></appearance>.
+            Salvia is also known as sage, and it is the largest genus of plants in the <family>mint</family> family.
+        </introduction>
+        
+        
+        
+        <!-- In several instructions, a few planting steps are required only in special circumstances.
+            Using attributes to clarify the conditions allow stylesheet to fetch and display applicable  conditions 
+            efficiently, so that beginner gardeners could  know the applicability of each step. -->
+        <!-- Section 3: Planting -->
+        <planting>
+            <title>To plant:</title>
+            <!-- the step one is applicable to a common situation -->
+            <plantingSteps nmbr="1" condition="general">
+                Salvia are most commonly grown from seed. They are typically directly sown into the <location type="planting">garden</location>, but they can be sown <location type="planting">indoors</location> early for a head start on growing.
+            </plantingSteps>
+            
+            <!-- the step two is conditional and mainly applicable  for gardeners who want earlier bloom -->
+            <plantingSteps nmbr="2" condition="earlier bloom">
+                Sowing <location type="planting">indoors</location> also encourages the Salvia to bloom earlier than if directly planted outside. To start indoors, sow seeds six to eight weeks before the last frost.
+            </plantingSteps>
+            
+            <plantingSteps nmbr="3" condition="general">
+                There are many varieties and some require <exposure>light</exposure> to germinate, so spread the seeds across the top of the soil and don’t cover them.
+            </plantingSteps>
+            
+            <plantingSteps nmbr="4" condition="general">
+                <moisture>Water seeds lightly</moisture> after planting.
+            </plantingSteps>
+        </planting>
+        
+        
+        
+        <!-- Different from the planting steps, instruction of growing stage is relatively more
+            condition-oriented. Using attributes to clarify the conditions allow stylesheet to fetch 
+            and display applicable  conditions efficiently, so that beginner gardeners could  know
+            the applicability of each step. -->
+        <!-- Section 4: Growth -->
+        <growth>
+            <title>To grow:</title>
+            
+            <!-- the following method is applicable to the general situation of growing a Zinnias plants -->
+            <growthMethods nmbr="1" condition="general">
+                <growthSteps nmbr="1">
+                    Transplant Salvia seedlings to the <location type="growing">garden</location> after the last frost date and space them <space type="growing">10 to 20 inches apart</space> depending on the variety and its size. Salvia should be spaced apart so they have plenty of room to bloom and grow.
+                </growthSteps>
+                <growthSteps nmbr="2">
+                    Salvia grows best in <exposure>full sun</exposure>, and it grows well in <soil type="growing">average to good soil</soil>.
+                </growthSteps>
+                <growthSteps nmbr="3">
+                    Water the Salvia <watering>once or twice during the week</watering> and keep them well-weeded. 
+                </growthSteps>
+                <growthSteps nmbr="4">
+                    Apply a 2-inch layer of <materials type="other">mulch</materials> around the plants to retain moisture and deter weeds. 
+                </growthSteps>
+                <growthSteps nmbr="5">
+                    Salvia self-sow, so plant them in an area where more can sprout. Salvia grow best in soil <soil type="growing">with a pH of 5.5 to 6.5</soil>.
+                </growthSteps>
+            </growthMethods>
+        </growth>
+        
+        
+        <!-- Section 5: Harvest -->
+        <harvest>
+            <title>To harvest:</title>
+            <!-- harvest step is not given in this instruction -->
+            <possibleOutcome>
+                Salvia makes a good <outcome>cut flower</outcome> because of its height, and it also can be used as <outcome>dried flowers</outcome> to decorate with during winter months.
+            </possibleOutcome>
+            <possibleOutcome>
+                When bringing the <outcome>fresh flowers</outcome> inside to display, remove any leaves or blossoms that will be underwater.
+            </possibleOutcome>
+            <possibleOutcome>
+                Since Salvia has so many varieties and many different colors, they make <outcome>beautiful displays in vase </outcome>. 
+            </possibleOutcome>
+            <possibleOutcome>
+                Salvia’s leaves can be harvested for <outcome>herb use</outcome> or in <outcome>culinary dishes</outcome>.
+            </possibleOutcome>
+        </harvest>
+        
+        
+        
+        <!-- Section 6: Craving -->
+        <craving>
+            <title>What Salvia craves:</title>
+            <cravingItem condition="initial planting period">
+                Salvia are lighter feeders than most plants. Once planting Salvia in the garden, add <itemName type="fertilizer">a general-purpose fertilizer </itemName>and add once again each month.
+            </cravingItem>
+            
+            <cravingItem condition="established">
+                Once it is established, cut the flowers back each fall and apply <itemName type="fertilizer">a balanced fertilizer</itemName> in the spring. Prune the plants midsummer and fertilize the plants again.
+            </cravingItem>
+            
+            <cravingItem condition="general">
+                Salvia also do well when <itemName type="compost">compost</itemName> is added to enrich the soil.
+            </cravingItem>
+        </craving>
+        
+        
+        
+        <!-- Section 7: Advertisement -->
+        <advertisement>
+            <title>Where to buy Salvia seeds:</title>
+            Urban Farmer offers Salvia seeds that have bright spiky blooms and make for a great groundcover.
+            Check out our Salvia seed selection on our website at <link url='ufseeds.com'>ufseeds.com</link>!
+        </advertisement>
+        
+        
+        <!-- the information in page footer is less relevant to the scenarios I intend to create
+            therefore, detailed tags are not provided. -->
+        <pageFooter>
+            100% Non-GMO Seed
+            One Day shipping
+            100% Satisfaction Guarantee
+            Family Owned + Operated
+            Copyright 2018 © Urban Farmer. All rights reserved.
+        </pageFooter>
+    </instruction>
+    
+    <instruction type="Zinnias">
+        
+        <!-- the information in page header is less relevant to the scenarios I intend to create
+            therefore, detailed mark-ups are not provided. -->
+        <pageHeader>
+            URBAN FARMER LOVE THE EARTH
+            120 E 161st Street, Westfield, Indiana 46074
+            Phone: 317-600-2807 • Email: customerservice@ufseeds.com
+            website: ufseeds.com
+        </pageHeader>
+        
+        
+        <!-- Section 1: Title -->
+        <!-- The title are divided into two parts:the  first level tells the scope, 
+            from Seed to Harvest and the difficulty level of the tutorial. The second part declares 
+            the name of the flower type of the instruction: Zinnias and pictures-->
+        <articleTitle>
+            <instructionDescription>From Seed to Harvest:
+                A beginner’s guide to growing</instructionDescription>
+            <flowerName>Zinnias</flowerName>
+            <photo filename="../img/Zinnias.jpg"/>
+            <photoDescription>Whirligig Zinnia seeds available at </photoDescription><website url='ufseeds.com'>ufseeds.com</website>
+            <photo filename="../img/Zinnias2.jpg"/>
+            <photoDescription>Zinderella Peach seeds available at </photoDescription><website url='ufseeds.com'>ufseeds.com</website>
+        </articleTitle>
+        
+        
+        <introduction>
+            Zinnias are a popular flower and add a beautiful burst of color to a bouquet. 
+            Zinnias grow in many <appearance><colors part="bloom">different colors</colors></appearance> and shapes and can bloom with flowers up to 6 inches in diameter. 
+            Zinnias are very eary to grow.
+        </introduction>
+        
+        
+        
+        <!-- In several instructions, a few planting steps are required only in special circumstances.
+            Using attributes to clarify the conditions allow stylesheet to fetch and display applicable  conditions 
+            efficiently, so that beginner gardeners could  know the applicability of each step. -->
+        <!-- Section 3: Planting -->
+        <planting>
+            <title>To plant:</title>
+            <plantingSteps nmbr="1" condition="general">
+                Zinnias are a <temperature type="planting">warm-weather</temperature> flower, but they don’t like to be transplanted.
+            </plantingSteps>
+            
+            <!--  the following step should be adopted in a warmer condition -->
+            <plantingSteps nmbr="2" condition="warm">
+                plant them directly <location type="planting">outdoors</location> when air and soil are 70 degrees or warmer. 
+            </plantingSteps>
+            
+            <plantingSteps nmbr="3" condition="general">
+                Plant seeds 1⁄4 inch deep and space them depending on how you want them to grow in the garden.
+            </plantingSteps>
+            
+            <plantingSteps nmbr="4" condition="general">
+                Once they sprout, thin the Zinnias, leaving the strongest seedlings. 
+            </plantingSteps>
+            
+            <!--  the following step should be adopted  when gardeners want earlier growth -->
+            <plantingSteps nmbr="5" condition="earlier growth">
+                However, if you want the Zinnias to grow earlier, they can be started <location type="planting">indoors</location> in <materials type="tools">peat pots</materials>. 
+            </plantingSteps>
+            
+            <!--  the following step is involves two locations and rather temperature-specific. 
+                If locations were labelled, results crawled by the XSL file could be uncomprehensive. 
+                Consequently, readers will not be able to undertstand this step in the full sentencfind and might find it confusing.
+                Therefore, location labelling is suspended in this steps   -->
+            <plantingSteps nmbr="6" condition="temperature change">
+                Begin them indoors a month before the last frost and once temperatures are warm enough, plant the entire pot in the garden.
+            </plantingSteps>
+        </planting>
+        
+        
+        
+        <!-- Different from the planting steps, instruction of growing stage is relatively more
+            condition-oriented. Using attributes to clarify the conditions allow stylesheet to fetch 
+            and display applicable  conditions efficiently, so that beginner gardeners could  know
+            the applicability of each step. -->
+        <!-- Section 4: Growth -->
+        <growth>
+            <title>To grow:</title>
+            
+            
+            <!-- the following method is applicable to the general situation of growing a Zinnias plants -->
+            <growthMethods nmbr="1" condition="general">
+                <growthSteps nmbr="1">
+                    Zinnias grow well in <exposure>full sun</exposure>, and they are generally resistant to <insect type="rebel">pests</insect>.
+                </growthSteps>
+                
+                <!-- the following three sentences are considered as one step as they are all concerning the step of watering -->
+                <growthSteps nmbr="2">
+                    Water the Zinnias <watering>an inch a week</watering>, but make sure you don’t overwater because Zinnias are susceptible to mildew. 
+                    When watering, water at the base of the plant and don’t get water on the leaves or stems.
+                    Water early in the morning so the plant has time to dry throughout the heat of the day before night falls.
+                </growthSteps>
+            </growthMethods>
+            
+            
+            <!-- the following method is applicable to a situation where the reader is looking for a method to grow a bushier Zinnias plants -->
+            <growthMethods nmbr="2" condition="bushier Zinnia">
+                <growthSteps nmbr="1">
+                    To produce bushier Zinnia plants, pinch off the top of the plants when they are young. 
+                </growthSteps>
+                
+                <growthSteps nmbr="2">
+                    Tall Zinnias will <materials type="tools">need to be staked</materials> so they don’t droop to the ground. 
+                </growthSteps>
+            </growthMethods>
+            
+            <!-- This is the last instruction for growth, and it refers to a general case in growing Zinnias  -->
+            <growthMethods nmbr="3" condition="general">
+                <growthSteps nmbr="1">
+                    <materials type="other">Mulch</materials> around the base of the Zinnias to retain moisture and deter weeds.
+                </growthSteps>
+            </growthMethods>
+        </growth>
+        
+        
+        <!-- Section 5: Harvest -->
+        <harvest>
+            <title>To harvest:</title>
+            
+            <possibleOutcome>
+                Harvesting the Zinnias to use as <outcome>cut flowers</outcome> will encourage more growth on the plant.
+            </possibleOutcome>
+            
+            <harvestSteps nmbr="1">
+                To use in a bouquet, cut the Zinnias above the leaves and place in a vase. More Zinnias will bloom on the stem.
+            </harvestSteps>
+            
+            <possibleOutcome>
+                Gardeners can also harvest the <outcome>seeds</outcome> of Zinnia flowers to plant the following year. 
+            </possibleOutcome>
+            
+            <possibleOutcome>
+                Zinnias that go to seed will attract birds to the garden, as birds will help <outcome>prevent smaller pests</outcome> in the garden, such as insects.
+            </possibleOutcome>
+        </harvest>
+        
+        
+        
+        <!-- Section 6: Craving -->
+        <craving>
+            <title>What Zinnias crave:</title>
+            <cravingItem condition="general">
+                Zinnias grow best in <itemName type="other">soil that is well-fed</itemName>. Work <itemName type="compost">compost</itemName> into the ground where you will be planting Zinnias early in the season so the compost has time to fertilize the soil.
+            </cravingItem>
+            
+            <cravingItem condition="general">
+                When the Zinnia plants are young, fertilize them with <itemName type="fertilizer">an all-purpose, slow-release granular fertilizer</itemName>. 
+            </cravingItem>
+            
+            <cravingItem condition="general">
+                Sprinkle <itemName type="fertilizer">a teaspoon of the fertilizer</itemName> on the ground around the base of the Zinnia plants, and the rain will mix it into the soil.
+            </cravingItem>
+        </craving>
+        
+        
+        
+        
+        <advertisement>
+            <title>Where to buy Zinnia seeds:</title>
+            Urban Farmer offers a wide variety of Zinnia seeds. They range from a variety with blooms reaching up to 6 inches in diameter to cutting varieties. Urban Farmer also selss Zinnias in solid colors of red, white, purple, orange, pink and yellow. Smaller, double bloom Zinnia seeds also are availble.
+            Check out our Zinnia seed selection on our website at <link url='ufseeds.com'>ufseeds.com</link>!
+        </advertisement>
+        
+        <!-- the information in page footer is less relevant to the scenarios I intend to create
+            therefore, detailed tags are not provided. -->
+        <pageFooter>
+            100% Non-GMO Seed
+            One Day shipping
+            100% Satisfaction Guarantee
+            Family Owned + Operated
+            Copyright 2018 © Urban Farmer. All rights reserved.
+        </pageFooter>
+    </instruction>
+    
+    
+</instructions>
+

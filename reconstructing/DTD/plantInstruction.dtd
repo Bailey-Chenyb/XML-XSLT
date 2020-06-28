@@ -1,0 +1,343 @@
+<!-- This is the structure of the original materials -->
+<!-- Each material is consist of 7 sections -->
+<!ELEMENT instructions
+  (meta, instruction+)>
+ <!ELEMENT meta
+  (source,reference+, author, accessingDate)>
+ <!ELEMENT source
+  (#PCDATA)>
+ <!ELEMENT reference
+  (#PCDATA)>
+ <!ELEMENT author
+  (#PCDATA)>
+<!ELEMENT accessingDate
+  (#PCDATA)>
+<!ELEMENT instruction
+  (pageHeader, articleTitle, introduction, planting, growth, harvest, craving, advertisement, pageFooter)>
+<!ATTLIST instruction
+  type CDATA #REQUIRED>
+
+<!-- the information in page header is less relevant to the scenarios I intend to create
+       therefore, detailed tags are not provided. -->
+<!ELEMENT pageHeader 
+  (#PCDATA)>
+
+
+<!-- Section 1: Title -->
+<!-- The following is the components of a title -->
+ <!-- The title are divided into two parts -->    
+ <!-- the first level, description, tells the scope and difficulty level of the planting tutorial -->
+ <!-- the second level declares the name of the flower  -->
+<!ELEMENT articleTitle
+  (#PCDATA | instructionDescription | flowerName | photo | photoDescription | website)*>
+  
+<!-- articleTitle/ instructionDescription -->
+<!ELEMENT instructionDescription
+  (#PCDATA)>
+ <!-- articleTitle/ flowerName -->
+<!ELEMENT flowerName
+  (#PCDATA)>
+   <!-- articleTitle/ photo -->
+<!ELEMENT photo
+  (#PCDATA)>
+  <!ATTLIST photo
+  filename CDATA #REQUIRED>
+     <!-- articleTitle/ photoDescription -->
+  <!ELEMENT photoDescription
+  (#PCDATA )*>
+      <!-- articleTitle/ website -->
+ <!ELEMENT website
+  (#PCDATA)>
+<!ATTLIST website
+  url CDATA #REQUIRED>
+  
+  
+
+<!-- Section 2: Introduction -->
+<!-- The following are the potential components of an introduction -->
+<!ELEMENT introduction
+  (#PCDATA | florescence | persistence | appearance | bed | lifeCycle | family | moisture | soil | insect)*>
+
+<!-- introduction/ florescence -->
+<!ELEMENT florescence 
+  (#PCDATA)>
+  
+<!-- introduction / persistence -->
+<!ELEMENT persistence 
+  (#PCDATA)>
+  
+<!-- introduction / appearance -->
+ <!ELEMENT appearance
+   ( #PCDATA | colors |  maxHeight)*>
+ 
+<!-- introduction / appearance / colors -->
+<!ELEMENT colors
+  (#PCDATA)>
+<!-- the attribute of part helps to specify which part of the flower the element of color 
+  refers to (petal, center, or generally the whole bloom) -->
+ <!ATTLIST colors
+     part (petal|center|bloom)  #REQUIRED>
+  
+<!-- introduction / appearance / maxHeight -->
+<!ELEMENT maxHeight
+  (#PCDATA)>
+  
+<!-- introduction / bed  -->
+<!ELEMENT bed
+  (#PCDATA)>
+<!ATTLIST bed
+ type (flower-bed | container | other)  #REQUIRED>
+  
+<!-- introduction / lifeCycle  -->
+<!ELEMENT lifeCycle
+  (#PCDATA)>
+  
+<!-- introduction / family  -->
+<!ELEMENT family
+  (#PCDATA)>
+ 
+<!-- introduction / moisture  -->
+<!ELEMENT moisture 
+  (#PCDATA)> 
+ 
+<!-- introduction / soil  --> 
+<!ELEMENT soil 
+  (#PCDATA)>
+ <!-- The cultivation of a plant might have different soil requirements in different stages,
+        and the element of "soil" could be mentioned in other part of the article.
+        Thus, an attribute is needed so that this element could be used in other sections while 
+        identifying what stage it refers to  -->
+<!ATTLIST soil 
+ type ( general | planting | growing | harvest | other )  #REQUIRED>
+  
+<!-- introduction / insect  --> 
+<!ELEMENT insect
+  (#PCDATA)>
+<!ATTLIST insect
+  type ( attraction | rebel )  #REQUIRED>
+
+
+
+
+<!-- Section 3: Planting -->
+<!-- Planting a flower needs several steps and each step has different requirements on 
+       materials, times etc., this is, therefore, necessary to clarify for ordinary audience 
+       where, when, what tools and time needed in each step. -->
+<!ELEMENT planting
+  (title, plantingSteps+)>
+ 
+<!--Planting / title -->
+ <!ELEMENT title
+  (#PCDATA)>
+ 
+<!--Planting / plantingSteps -->  
+<!-- Natural characteristics of a flowering plant are likely to be mentioned in this section when explaining 
+        why a specific action should be taken   -->
+<!ELEMENT plantingSteps
+  (#PCDATA | location | space | soil | materials | temperature | moisture | exposure)*>
+ <!-- Planting steps might be conitional, but conditional planting steps are less frequent 
+        and most of them are sequential. Therefore, an attribute of condition is sufficient to demonstrate
+        whether a step is noncompulsory -->
+<!-- the CDATA of condition allows the possibility for extending the instruction and adding more steps 
+        and conditions in the future-->
+<!ATTLIST plantingSteps
+  nmbr CDATA  #REQUIRED
+  condition CDATA  #REQUIRED >  
+  
+<!--Planting / plantingSteps / location -->
+ <!ELEMENT location
+  (#PCDATA)>
+ <!-- The cultivation of a plant might have different location requirements in different stages,
+        and the element of "location" could be mentioned in other part of the article.
+        Thus, an attribute is needed so that this element could be used in other sections while 
+        identifying what stage it refers to  -->
+ <!ATTLIST location
+  type ( planting | growing | harvest | other )  #REQUIRED>
+  
+  
+ <!--Planting / plantingSteps / space -->
+ <!-- the instruction regarding interval between flowers might not necessary in the process of planting,
+        Thus, an attribute is needed so that this element could be used in other sections while 
+        identifying what stage it refers to  -->
+ <!ELEMENT space
+  (#PCDATA)>
+<!ATTLIST space
+  type ( planting | growing | harvest | other )  #IMPLIED> <!-- might not necessarily needed -->
+  
+
+ <!--Planting / plantingSteps / soil -->
+ <!-- the element of "soil" is declared in the previous part of the document -->
+ 
+ <!--Planting / plantingSteps / materials -->
+ <!ELEMENT materials
+  (#PCDATA)>
+ <!ATTLIST materials
+  type ( tools | fertilizer | other )  #REQUIRED>
+ 
+<!--Planting / plantingSteps / temperature-->
+<!ELEMENT temperature
+  (#PCDATA)>
+<!-- The cultivation of a plant might have different temperature requirements in different stages,
+        and the element of "location" could be mentioned in other part of the article.
+        Thus, an attribute is needed so that this element could be used in other sections while 
+        identifying what stage it refers to  -->
+<!ATTLIST temperature
+  type ( planting | growing | harvest | other )  #REQUIRED>
+ 
+<!--Planting / plantingSteps / moisture -->
+<!--  the element of "moisture" is declared in the previous part of the document-->
+ 
+<!--Planting / plantingSteps / exposure -->
+<!ELEMENT exposure
+  (#PCDATA)>
+
+  
+<!-- Section 4: Growth -->
+<!-- this section gives growing instructions on different conditions (e.g. indoor,
+outdoor or growing a flower mix) -->
+<!ELEMENT growth
+(title | growthMethods)*>
+
+<!--Growth / title -->
+<!-- the element of "title" is declared in the previous part of the document -->
+
+<!--Growth / growthMethods-->
+<!-- Different from planting steps, the instructions for growth are frequently conditional ang several steps 
+        might be taken under one condition (e.g. dealing with taller variety of Aster). Thus, it would be clearer if the 
+        conditions are specified first and followed by corresponding steps-->
+<!-- this structure helps to displaying steps with different conditions   -->
+<!ELEMENT  growthMethods
+  (growthSteps+)>
+<!-- the CDATA of condition allows the possibility for extending the instruction and adding more steps 
+        and conditions in the future-->
+ <!ATTLIST growthMethods
+  nmbr CDATA #REQUIRED
+  condition CDATA  #REQUIRED>
+  
+ <!--Growth / growthMethods / growthSteps -->
+<!ELEMENT  growthSteps
+  (#PCDATA | location | temperature | bed | moisture | space | exposure | soil |
+  materials | insect | watering | lifeCycle )*> 
+<!ATTLIST growthSteps
+  nmbr CDATA #REQUIRED>
+
+<!--Growth / growthMethods / growthSteps / location -->
+<!-- the element of "location" is declared in the previous part of the document -->
+
+<!--Growth / growthMethods / growthSteps / temperature -->
+<!-- the element of "temperature" is declared in the previous part of the document -->
+ 
+ <!--Growth / growthMethods / growthSteps / bed -->
+<!-- the element of "bed" is declared in the previous part of the document --> 
+
+<!--Growth / growthMethods / growthSteps / moisture -->
+<!-- the element of "moisture" is declared in the previous part of the document --> 
+
+<!--Growth / growthMethods / growthSteps / space -->
+<!-- the element of "space" is declared in the previous part of the document --> 
+
+<!--Growth / growthMethods / growthSteps / exposure -->
+<!-- the element of "exposure" is declared in the previous part of the document --> 
+
+<!--Growth / growthMethods / growthSteps / soil -->
+<!-- the element of "soil" is declared in the previous part of the document --> 
+
+<!--Growth / growthMethods / growthSteps / materials -->
+<!-- the element of "materials" is declared in the previous part of the document --> 
+
+<!--Growth / growthMethods / growthSteps / insect -->
+<!-- the element of "insect" is declared in the previous part of the document --> 
+
+<!--Growth / growthMethods / growthSteps / watering -->
+<!ELEMENT watering
+  (#PCDATA)>
+  
+<!--Growth / growthMethods / growthSteps / lifeCycle -->
+<!-- the element of "lifeCycle" is declared in the previous part of the document -->
+
+
+
+<!-- Section 5: Harvest -->
+<!ELEMENT harvest
+ (#PCDATA | title | harvestSteps | possibleOutcome | materials )*> 
+ 
+<!--Harvest / title -->
+<!-- the element of "title" is declared in the previous part of the document -->
+
+<!--Harvest /harvestSteps  --> 
+<!ELEMENT harvestSteps
+  (#PCDATA | materials | location )*> 
+<!ATTLIST harvestSteps
+  nmbr CDATA #REQUIRED>
+  
+<!--Harvest / harvestSteps / materials  -->
+<!-- the element of "materials" is declared in the previous part of the document -->
+
+<!--Harvest / harvestSteps / location  -->
+<!-- the element of "location" is declared in the previous part of the document -->
+
+<!--Harvest / possibleOutcome -->
+<!-- harvestSteps and displaying  might also be mentioned in the same sentence mentioning the possible outcome -->
+ <!ELEMENT possibleOutcome
+  (#PCDATA | outcome | harvestSteps | lifeCycle )*>
+  
+<!--Harvest / possibleOutcome / outcome  -->
+<!ELEMENT outcome
+  (#PCDATA)>
+  
+<!--Harvest / possibleOutcome / harvestSteps -->
+<!-- the element of "harvestSteps" is declared in the previous part of the document -->
+  
+<!--Harvest / possibleOutcome / lifeCycle -->
+<!-- the element of "lifeCycle" is declared in the previous part of the document -->
+  
+  
+  
+<!-- Section 6: Craving -->
+<!-- this part gives information about what a specific kind of flower craves (e.g. fertilizer, watering) -->
+<!ELEMENT craving 
+(#PCDATA | title | cravingItem | restriction)*>
+
+<!-- Craving / title -->
+<!-- the element of "title" is declared in the previous part of the document -->
+
+<!-- Craving / cravingItem -->
+<!ELEMENT cravingItem 
+  (#PCDATA | itemName)*>
+<!-- The craving of a flowing plant could be conditional. Therefore, an attribute of condition could helps to highlight 
+        the optionality of an item and allow more flexibility for gardeners   -->
+ <!-- the CDATA of condition allows the possibility for extending the instruction and adding more items 
+        and conditions in the future-->
+<!ATTLIST  cravingItem
+  condition CDATA  #IMPLIED >
+ 
+<!-- Craving / cravingItem / itemName --> 
+<!ELEMENT itemName 
+  (#PCDATA)>
+<!ATTLIST itemName
+  type ( fertilizer | compost | other) #REQUIRED>
+ 
+<!-- Craving / restriction -->
+<!ELEMENT restriction
+  (#PCDATA)>
+<!ATTLIST  restriction
+  condition CDATA #IMPLIED>
+  
+  
+
+<!-- Section 7: Advertisement -->
+<!ELEMENT advertisement 
+  (#PCDATA | title | link)*>
+<!ELEMENT link
+  (#PCDATA)>
+ <!ATTLIST link
+   url CDATA #REQUIRED>
+  
+  
+  <!-- the information in page footer is less relevant to the scenarios I intend to create,
+       therefore, detailed tags are not provided. -->
+  <!ELEMENT pageFooter
+  (#PCDATA)>
+
+
+

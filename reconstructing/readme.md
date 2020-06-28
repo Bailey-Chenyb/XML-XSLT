@@ -3,7 +3,7 @@ XML+XSLT project: Instructions for Flowering Plants
 =======================
 
 ## Description:
-The project is a working XML-based project using source material of my choice.
+The project is a working XML-based project using source material of my choice (see copies).
 
 I considered this project to be a pilot for a much larger project and so it was designed to allow it to be extended with the possibility of more material being added in the future.
 
